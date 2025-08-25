@@ -1,8 +1,13 @@
 defmodule Identicon do
-
   def main(input) do
     input
     |> hash_input
+    |> pic_color
+  end
+
+  def pic_color(image) do
+    %Identicon.Image{hex: [r, g, b | _tail]} = image
+    [r, g, b]
   end
 
   def hash_input(input) do
@@ -11,5 +16,4 @@ defmodule Identicon do
 
     %Identicon.Image{hex: hex}
   end
-
 end
