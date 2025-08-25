@@ -56,3 +56,7 @@ to get deps running:
 > mix local.rebar --force
 > mix deps.get
 > mix deps.compile
+
+
+docs for egd: https://www.erlang.org/docs/17/man/egd
+docs for chunk_every: https://hexdocs.pm/elixir/1.18.4/Enum.html#chunk_every/2
