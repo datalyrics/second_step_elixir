@@ -52,3 +52,7 @@ using ex_doc:
 running tests:
 > mix test
 
+to get deps running:
+> mix local.rebar --force
+> mix deps.get
+> mix deps.compile
